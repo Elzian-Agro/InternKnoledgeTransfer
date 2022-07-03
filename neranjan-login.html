@@ -17,7 +17,7 @@
     ></script>
     <title>login</title>
     <style>
-        .mycontainer {
+      .mycontainer {
         margin: 0 auto;
         margin-top: 20vh;
         width: 300px;
@@ -27,31 +27,33 @@
   </head>
   <body>
     <div class="mycontainer">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Email address</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="name@example.com"
-        />
+      <div class="insideContainer">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="password"
+          />
+        </div>
+        <button type="button" class="btn btn-success" id="submitBtn">
+          Login
+        </button>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Password</label
-        >
-        <input
-          type="password"
-          class="form-control"
-          id="password"
-          placeholder="password"
-        />
-      </div>
-      <button type="button" class="btn btn-success" id="submitBtn">
-        Login
-      </button>
     </div>
   </body>
 </html>
