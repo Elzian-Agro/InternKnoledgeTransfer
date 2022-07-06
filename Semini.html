@@ -12,7 +12,13 @@
 	    .row{display: flex; height: 80%; align-items: center;}
 	    .col{flex-basis: 50%;}
 	    h1{color: #fff; font-size: 50px;}
-	    p{color: #fff; font-size: 13px; line-height: 15px;} 
+	    p{color: #fff; font-size: 13px; line-height: 15px;}
+	    button{width: 180px; height: 35px; font-size: 17px 0; background-color: #fff; border-radius: 20px; margin-top: 30px; background-color: #96CF24; color: #fff;
+	    transition: all 0.5s; cursor: pointer; border: none;}	
+	    button span {cursor: pointer; display: inline-block; position: relative; transition: 0.5s;}
+	    button span:after {content: '\00bb';  position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;}
+	    button:hover span {padding-right: 25px;}
+	    button:hover span:after {opacity: 1; right: 0;}
         </style>
     </head>
     <body>
@@ -31,7 +37,7 @@
                     <h1>Robotic process automation</h1>
                     <p>Robotic process automation (RPA) is a technique that enables software robots to emulate human behaviors 
                     by using an application's user interface (UI) without system change or human interaction.</p>
-                    <button type="button">Explore</button>
+			<button type="button"><span>Explore</span></button>
                 </div>
             </div>
         </div>
