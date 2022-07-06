@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>simple Blog</title>
+        <style>
+            *{margin: 0; padding: 0; font-family: 'Robot', sans-serif;}
+            body {background-image: linear-gradient(to right, #006838, #96CF24)}
+            nav{margin-top: 5vh; flex: 1; text-align: right;}
+	    .navbar{height: 12%; display: flex; align-items: center;} 
+	    nav ul li{list-style: none; display: inline-block; margin-left: 50px; margin-right: 50px;}
+            nav ul li a{text-decoration: none; color: #fff; font-size: 15px;}
+	    .row{display: flex; height: 80%; align-items: center;}
+	    .col{flex-basis: 50%;}
+	    h1{color: #fff; font-size: 50px;}
+	    p{color: #fff; font-size: 13px; line-height: 15px;}
+	    button{width: 180px; height: 35px; font-size: 17px 0; background-color: #fff; border-radius: 20px; margin-top: 30px; background-color: #96CF24; color: #fff;
+	    transition: all 0.5s; cursor: pointer; border: none;}	
+	    button span {cursor: pointer; display: inline-block; position: relative; transition: 0.5s;}
+	    button span:after {content: '\00bb';  position: absolute; opacity: 0; top: 0; right: -20px; transition: 0.5s;}
+	    button:hover span {padding-right: 25px;}
+	    button:hover span:after {opacity: 1; right: 0;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Robotic process automation</h1>
+                    <p>Robotic process automation (RPA) is a technique that enables software robots to emulate human behaviors 
+                    by using an application's user interface (UI) without system change or human interaction.</p>
+			<button type="button"><span>Explore</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
