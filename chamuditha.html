@@ -21,6 +21,14 @@
             width: 150px;
             height: 150px;
         }
+        .box {
+            width: 300px;
+            height: 400px;  
+            padding: 50px;
+            margin: auto;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
         .blink {
                 animation: blink-animation 2s steps(5, start) infinite;
                 -webkit-animation: blink-animation 2s steps(5, start) infinite;
@@ -41,7 +49,9 @@
 </head>
 <body>
    <h1>Hi my name is Chamuditha<span class="blink">|</span></h1> 
-    <h2>I am a Backend developer</h2>
-    <img src="https://avatars.dicebear.com/api/bottts/:chamuditha.svg">
+   <div class="box">
+        <h2>I am a Backend developer</h2>
+        <img src="https://avatars.dicebear.com/api/bottts/:chamuditha.svg">
+    </div>
 </body>
 </html>
