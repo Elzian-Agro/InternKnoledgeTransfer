@@ -14,7 +14,7 @@ img {
 
 #top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
 #top-nav ul { list-style:none; padding:0; height:37px; float:left;}
-#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;font-size: 20px;}
 #top-nav ul li a { display:block; margin:0; padding:8px 20px; color:#000080; text-decoration:none;}
 #top-nav ul li.active a, #top-nav ul li a:hover { color:#b3b3ff;}
 
@@ -29,3 +29,21 @@ img {
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 
 .foot {text-decoration: none;}
+
+.signin {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  float:right";
+
+}
+.signin:hover {
+  background-color: #000080;
+  color: white;
+  
+}
