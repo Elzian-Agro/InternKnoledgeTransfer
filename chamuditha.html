@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamuditha's page</title>
+    <style>
+        body{
+            background-color: #212121;
+            text-align: center;
+            color: #eeeeee;
+        }
+        span{
+            color: #f73378;
+        }
+        img {
+            background-color: #f73378;
+            padding: 10px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        p{
+            color: #f0eded;
+        }
+        .box {
+            width: 300px;
+            height: 400px;  
+            padding: 50px;
+            margin: auto;
+            background-color: #575757;
+            border: 1px solid rgb(84, 12, 136);
+            box-sizing: border-box;
+        }
+        .blink {
+                animation: blink-animation 2s steps(5, start) infinite;
+                -webkit-animation: blink-animation 2s steps(5, start) infinite;
+            }
+            @keyframes blink-animation {
+                to {
+                visibility: hidden;
+                }
+            }
+            @-webkit-keyframes blink-animation {
+                to {
+                visibility: hidden;
+                }
+            }
+
+    </style>
+</head>
+<body>
+    
+   <h1>Hi my name is Chamuditha<span class="blink">|</span></h1> 
+   <div class="box">
+        <h2>I am a Backend developer</h2>
+        <img src="https://avatars.dicebear.com/api/bottts/:chamuditha.svg">
+        <p id="Quotes"></p>
+        <script defer>
+            let r_text = [];
+            r_text[0] = '“The computer was born to solve problems that did not exist before.” – Bill Gates ';
+            r_text[1] = '“First, solve the problem. Then, write the code.” – John Johnson';
+            r_text[2] = '“Experience is the name everyone gives to their mistakes.” – Oscar Wilde';
+            r_text[3] = '“Simplicity is the soul of efficiency.” – Austin Freeman';
+    
+            var i = Math.floor(r_text.length * Math.random());
+            document.getElementById('Quotes').innerHTML = r_text[i];
+        </script>
+    </div>
+</body>
+</html>
