@@ -58,7 +58,7 @@ img {
   width: 40%;
   font-family:   'Lucida Sans Unicode', Geneva, Verdana, sans-serif,sans-serif;
   color: #fff;
-  font-size: larger;
+  font-size: 25px;
 }
 
 #Gs {
@@ -70,7 +70,15 @@ img {
   margin: 4px 2px;
   cursor: pointer;
   background-color: blue;
-  border: none;
+  border: 2px solid #fff ;
   color: white;
+  border-radius: 4px;
+
+}
+
+.bgimage{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 
 }
