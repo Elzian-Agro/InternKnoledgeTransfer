@@ -18,7 +18,7 @@ img {
 #top-nav ul li a { display:block; margin:0; padding:8px 20px; color:#000080; text-decoration:none;}
 #top-nav ul li.active a, #top-nav ul li a:hover { color:#b3b3ff;}
 
-#footerblurb { color:#000080;}
+#footerblurb { color:#000080; background-color: #ddd;}
 #footerblurb-inner { margin:0 auto; width:922px; padding:24px;}
 #footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
 
