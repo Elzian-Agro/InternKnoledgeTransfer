@@ -47,3 +47,30 @@ img {
   color: white;
   
 }
+.box {position: relative; display: inline-block;}
+
+.box .imgtxt{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40%;
+  font-family:   'Lucida Sans Unicode', Geneva, Verdana, sans-serif,sans-serif;
+  color: #fff;
+  font-size: larger;
+}
+
+#Gs {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: blue;
+  border: none;
+  color: white;
+
+}
