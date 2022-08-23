@@ -1,0 +1,66 @@
+* {margin: 0; padding: 0;}
+
+.clearfix { overflow: auto; }
+
+a {text-decoration: none; color: red;}
+
+
+
+.nav_bar{
+	background-color: green;
+	height: 60px;
+	width: 100%;
+}
+
+.c_name{
+	text-align: center;
+	padding-top: 5px;
+}
+
+ .userp{
+ 	text-align: center;
+ }
+
+
+ .info{
+ 	text-align: justify-all;
+ 	padding-top: 10px;
+ 	
+ 	margin: auto;
+ 	max-width: 500px;
+ 	padding-bottom: 10px;
+
+ }
+ .fname{
+ 	text-align: center;
+ }
+
+ .about{
+ 	border: solid;
+ 	border-color: green;
+ 	border-radius: 5px;
+ 	margin: auto;
+ 	max-width: 90%;
+ 	border-width: 3px;
+ 	padding-bottom: 300px;
+ 	box-shadow: 1px 0 10px black;
+
+
+
+ }
+
+ .fstcol{
+ 	height: 50px;
+ 	max-width: 90%;	
+ 	margin: auto;
+ 
+
+}
+
+img{
+	width: 300px;
+	height: 200px;	
+
+	display: block;
+	margin: 0 auto 0 auto;
+};
