@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Qestion 05</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+function binaryToDecimal(n)
+{
+	let num = n;
+	let decimal_value = 0;
+	let base = 1;
+
+	let len = num.length;
+	for (let i = len - 1; i >= 0; i--) 
+	{
+		if (num[i] == '1')
+		decimal_value += base;
+		base = base * 2;
+	}
+
+	return decimal_value;
+}
+	let num = "10101001";
+	document.write(binaryToDecimal(num) + "<br>");
+</script>
+</body>
+</html>
