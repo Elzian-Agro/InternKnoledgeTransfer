@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Question 03 </title>
+<script>
+<!--
+var emp1,hours1,rate1,emp2, hours2, rate2,emp3, hours3,rate3;
+var cal1, cal2, cal3;
+
+emp1 = window.prompt("Enter the name of Employee 1:");
+hours1= window.prompt("Please enter the hours Employee 1 worked:");
+rate1 = window.prompt("Enter hourly pay rate for Employee1:");
+emp2 = window.prompt("Enter the name of Employee 2:");
+hours2 = window.prompt("Please Enter Number of Hours Employee2 worked :");
+rate2 = window.prompt("Enter hourly pay rate for Employee2:");
+emp3 = window.prompt("Enter the name of Employee 3:");
+hours3 = window.prompt("Please Enter Number of Hours Employee3 worked :");
+rate3 = window.prompt("Enter hourly pay rate for Employee3:");
+
+if(parseInt(hours1)>40)
+{
+var extrahours = parseInt(parseInt(hours1)-40);
+var extrarate= parseInt(rate1) + (parseInt(rate1) / 2 );
+cal1= ((40 * parseInt(rate1))+ (extrahours * parseInt(extrarate)));
+}
+else
+{
+cal1=parseInt(hours1) * parseInt(rate1);
+}
+document.writeln("Name of the Employee1: " + emp1+ "<br>");
+document.writeln( " Employee1 Gross Wage is: " + cal1+ "<br>");
+
+if(parseInt(hours2)>40)
+{
+var extrahours1 = parseInt(parseInt(hours2)-40);
+var extrarate1= parseInt(rate2) + (parseInt(rate2) / 2 );
+cal2= ((40 * parseInt(rate2))+ (extrahours1 * parseInt(extrarate1)));
+}
+else
+{
+cal2=parseInt(hours2) * parseInt(rate2);
+}
+document.writeln("Name of the Employee2: " + emp2 + "<br>");
+document.writeln( " Employee2 Gross Wage is: " + cal2+ "<br>" );
+
+if(parseInt(hours3)>40)
+{
+var extrahours2 = parseInt(parseInt(hours3)-40);
+var extrarate2= parseInt(rate3) + (parseInt(rate3) / 2 );
+cal3= ((40 * parseInt(rate3))+ (extrahours2 * parseInt(extrarate2)));
+}
+else
+{
+cal3=parseInt(hours3) * parseInt(rate3);
+}
+document.writeln("Name of the Employee3: " + emp3 + "<br>");
+document.writeln( " Employee3 Gross Wage is: " + cal3 + "<br>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter the first Number: <input type="text" name = "num1" id = "num1"/><br>
+Enter the second Number: <input type="text" name = "num2" id = "num2"/><br>
+<button onclick="multiple (document.getElementById('num1').value, document.getElementById('num2').value)">Submit</button>
+
+<p id="q10"></p>
+
+<script>
+function multiple (a,b) {
+document.getElementById("q10").innerHTML = (a%b == 0);
+
+return (a%b == 0);
+}
+</script>
+
+</body>
+</html>
