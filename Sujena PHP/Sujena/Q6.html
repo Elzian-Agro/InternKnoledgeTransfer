@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<title>Question 06 </title>
+	<script type="text/javascript">
+	function EncryptNumber()
+	{
+		var num1, num2, num3, num4;
+		var input;
+
+		input = prompt("Enter a 4 digit number");
+
+		var number = parseInt(input);
+
+		num1 = parseInt((number / 1000 + 7) % 10);
+		num2 = parseInt((number % 1000 / 100 + 7) % 10);
+		num3 = parseInt((number % 1000 % 100 / 10 + 7) % 10);
+		num4 = parseInt((number % 1000 % 100 / 10 + 7) % 10);
+
+		var encryptedNum;
+		encryptedNum = "The encrypted number is " + num1 + num2 + num3 + num4;
+		document.write(encryptedNum);
+	}
+
+	function DecryptNumber()
+	{
+		var input;
+
+		input = prompt("Please enter a 4 digit number");
+
+		var number = input;
+		var num1, num2, num3, num4;
+
+		num1 =  parseInt(number / 1000);
+		num2 = parseInt(number % 1000 / 100);
+		num3 = parseInt(number % 1000 % 100 / 10);
+		num4 = parseInt(number % 1000 % 100 % 10);
+
+		var temp = parseInt((num1 + 3) % 10);
+		num1 = parseInt((num3 + 3) % 10);
+		num3 = temp;
+		temp = parseInt((num2 + 3) % 10);
+		num2 = parseInt((num4 + 3) % 10);
+		num4 = temp;
+		
+		var decryptedNumber = num1 * 1000 + num2 * 100 + num3 * 10 + num4;
+		document.write("The decrypted number is" + decryptedNumber) ;
+	}
+
+	</script>
+	</head>
+	<body>
+		<input type="button" value="Encrypt number" onclick="EncryptNumber()">
+		<input type="button" value="Decrypt number" onclick="DecryptNumber()">
+	</body>
+		
+
+</html>
