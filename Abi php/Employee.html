@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+var employee1, employee2, employee3, e1_wh, e2_wh, e3_wh, extra_hr, hrly_rate1,hrly_rate2,hrly_rate3,extra_hr_rate, total_salary;
+
+e1_wh = prompt("Enter the Total Hour of Employee 1 : ");
+hrly_rate1 = prompt("Enter the Rate for per hour for employee 1 : ");
+
+e2_wh = prompt("Enter the Total Hour of Employee 2 : ");
+hrly_rate2 = prompt("Enter the Rate for per hour for employee 2 : ");
+
+e3_wh = prompt("Enter the Total Hour of Employee 3 : ");
+hrly_rate3 = prompt("Enter the Rate for per hour for employee 3 : ");
+
+if(parseInt(e1_wh)>40)
+{
+var extra_hr1 = parseInt(parseInt(e1_wh)-40);
+var extra_hr_rate1 = extra_hr1 * (parseInt(e1_wh)/2);
+var normal_time_rate1 = 40 * (parseInt(hrly_rate1));
+var total_salary_1 = extra_hr_rate1 + normal_time_rate1;
+
+}
+else
+{
+total_salary_1 = normal_time_rate1;
+}
+
+
+document.write("<br> Employee 1  Total Working Hour is :  \t " + e1_wh);
+document.write("<br> Employee 1 Extra Working Hour Time is :  \t " + extra_hr1);
+document.write("<br> Employee 1 Normal working hour total Salary is :  \t " + normal_time_rate1);
+document.write("<br> Employee 1 Extra working hour total Salary is :  \t " + extra_hr_rate1);
+document.write("<br> Employee 1 Total Salary is :  \t " + total_salary_1);
+
+
+
+if(parseInt(e2_wh)>40)
+{
+var extra_hr2 = parseInt(parseInt(e2_wh)-40);
+var extra_hr_rate2 = extra_hr2 * (parseInt(e2_wh)/2);
+var normal_time_rate2 = 40 * (parseInt(hrly_rate2));
+var total_salary_2 = extra_hr_rate2 + normal_time_rate2;
+
+}
+else
+{
+total_salary_2 = normal_time_rate2;
+}
+
+
+document.write("<br> Employee 2  Total Working Hour is :  \t " + e2_wh);
+document.write("<br> Employee 2 Extra Working Hour Time is :  \t " + extra_hr2);
+document.write("<br> Employee 2 Normal working hour total Salary is :  \t " + normal_time_rate2);
+document.write("<br> Employee 2 Extra working hour total Salary is :  \t " + extra_hr_rate2);
+document.write("<br> Employee 2 Total Salary is :  \t " + total_salary_2);
+
+
+
+if(parseInt(e3_wh)>40)
+{
+var extra_hr3 = parseInt(parseInt(e3_wh)-40);
+var extra_hr_rate3 = extra_hr3 * (parseInt(e3_wh)/2);
+var normal_time_rate3 = 40 * (parseInt(hrly_rate3));
+var total_salary_3 = extra_hr_rate3 + normal_time_rate3;
+
+}
+else
+{
+total_salary_3 = normal_time_rate3;
+}
+
+
+document.write("<br> Employee 3 Total Working Hour is :  \t " + e3_wh);
+document.write("<br> Employee 3 Extra Working Hour Time is :  \t " + extra_hr3);
+document.write("<br> Employee 3 Normal working hour total Salary is :  \t " + normal_time_rate3);
+document.write("<br> Employee 3 Extra working hour total Salary is :  \t " + extra_hr_rate3);
+document.write("<br> Employee 3 Total Salary is :  \t " + total_salary_3);
+
+
+</script>
+
+</body>
+</html>
