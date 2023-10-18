@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Question 10</title>
+<script type="text/javascript" >
+		var customer = 0;
+		var total_charge = 0;
+          function calculate_Charges(hour){
+			var charges = 2; 
+			if (hour > 3)
+				charges += Math.ceil(hour - 3) * 0.5;
+			if (charges > 10) 
+			total_charge += charges;
+			return charges;
+          }
+		  function calculation(){
+				var hoursPark = parseFloat(document.getElementById("hoursPark").value);
+				var charges = calculate_Charges(hoursPark);
+				document.getElementById("charges").value = charges;
+		  }
+	
+	function calculateCharges() // one customer
+	{
+		customer++;
+		var hoursPark = parseFloat(prompt("Please enter the hours parked for customer: ", ""));
+		var charges = calculate_Charges(hoursPark);
+		
+		document.write("<tr><td>Customer " + customer + "</td><td align='right'>" + hoursPark + "</td><td align='right'>" + charges.toString() + "</td></tr>");
+	}
+
+	function input() 
+	{
+		document.write("<table><th>Customer</th><th>Hours Parked</th><th>Charges</th>");
+		var customerAdd = 'Y';
+		while (customerAdd == "Y")
+		{
+			calculateCharges()
+			customerAdd = prompt("Add a Customer? ", "Y");
+		}
+		document.write("<tr><td/><td/><td align='right'><b>$" + totalCharges.toString() + "</b></td></tr>");
+		document.write("</table>");
+	}
+     </script>     
+</head>
+<body onload="input();">
+  <h1> Welcome to the program to calculate the parking garage charges</h1>
+  <hr>
+  <p>
+  Hours parked:<input type="text" id="hrsParked"><br>
+  Charges:<input type="text" id="charges"><br>
+	</p>
+  <button onclick="doCalculation()">Capture the Charges</button>
+</body>
+</html>

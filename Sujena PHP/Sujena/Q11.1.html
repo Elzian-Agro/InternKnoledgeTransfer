@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>Click the button to demonstrate the prompt box saying enter the number.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let testNumber = prompt("Please enter the number", "1,2,3...");
+	
+	var result = false;
+  
+	if (testNumber != null) {
+	result = isEven(testNumber);
+	
+	}
+   
+	document.getElementById("demo").innerHTML = result ;
+  
+}
+function isEven(num) {
+
+	if (num%2 ==0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+</script>
+
+</body>
+</html>

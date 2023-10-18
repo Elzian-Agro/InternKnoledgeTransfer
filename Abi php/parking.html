@@ -1,0 +1,34 @@
+<html>
+<head>
+<p id = "demo" ></p>
+<body>
+<script>
+function calculateCharges(extra_parking_hrs_rate,total_parking_hrs_rate,customer_parking_hrs){
+
+var customer_parking_hrs = prompt("Enter the total parking hours:");
+
+if (customer_parking_hrs <= 3)
+{
+var parking_fee = 2;
+}
+else if((customer_parking_hrs >3 )&& (customer_parking_hrs<16))
+{
+var extra_parking_hrs = parseInt(parseInt(customer_parking_hrs) - 3);
+var extra_parking_hrs_rate = parseInt(extra_parking_hrs * 0.5);
+var total_parking_hrs_rate = 2 + extra_parking_hrs_rate;
+}
+else if(customer_parking_hrs > 16)
+{
+total_parking_hrs_rate = 12;
+}
+//document.getElementById("demo").innerHTML = multiple(extra_parking_hrs,extra_parking_hrs_rate,total_parking_hrs_rate,customer_parking_hrs);
+
+document.write("<br> Total Parking Hour Rate is :  \t " + total_parking_hrs_rate);
+}
+document.getElementById("demo").innerHTML = calculateCharges();
+
+</script>
+</head>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="q8()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function q8() {
+  let testNumber = prompt("Please enter the number", "1,2,3...");
+  let ch = "";
+  if (testNumber != null) {
+	if(testNumber <=30 && testNumber >= 1){
+		for (let k = 1; k <=testNumber; k++) {
+			ch += "*";
+		}
+  
+	}
+    document.getElementById("demo").innerHTML = ch ;
+  }
+}
+</script>
+
+</body>
+</html>

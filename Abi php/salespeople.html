@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+var commision,weekly_recieve,weekly_gross_sale,total_income;
+
+var no1_item = prompt("Enter the number of solded no1 item : ");
+var no2_item = prompt("Enter the number of solded no2 item : ");
+var no3_item = prompt("Enter the number of solded no3 item : ");
+var no4_item = prompt("Enter the number of solded no4 item : ");
+
+weekly_recieve = 200;
+
+weekly_gross_sale = no1_item*239.99+no2_item*129.75+no3_item*99.95+no4_item*350.89;
+
+commision=weekly_gross_sale*0.09;
+
+total_income = weekly_recieve + commision;
+
+document.write("<br> Your Commision is :  \t " + commision);
+document.write("<br> Your Gross Sale is :  \t " + weekly_gross_sale);
+document.write("<br> Your Total Income is :  \t " + total_income);
+</script>
+
+</body>
+</html>

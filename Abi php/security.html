@@ -1,0 +1,35 @@
+<html>
+<head>
+<p id="demo"></p>
+<body>
+
+<p id="demo"></p>
+<script>
+var n,first, second, third, fourth;
+
+var n = prompt("Enter exactly 4 digit integer : "); 
+
+fourth = n % 10;
+fourth = (fourth + 7) % 10;
+n = n/10;
+third = (n%10+7)%10;
+n = n/10;
+second = (n%10+7)%10;
+n = n/10;
+first = (n%10+7)%10;
+
+document.write("<br>"+first + second + third + fourth);
+document.write("<br>"+third + fourth + first + second);
+document.write("<br>"+third*1000 + fourth * 100+ first * 10 + second *1);
+
+    //document.getElementById("demo").innerHTML = first + second + third + fourth;
+
+
+</script>
+
+
+
+
+</body>
+</head>
+</html>
