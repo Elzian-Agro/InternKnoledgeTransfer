@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Random HTML File</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #e44d26;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Hello, World!</h1>
+        <p>This is another example of a random HTML file. Feel free to explore and modify the content!</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p>Random number: <span id="randomNumber"></span></p>
+    </div>
+
+    <script>
+        // Generate and display a random number
+        document.getElementById('randomNumber').innerText = Math.floor(Math.random() * 100);
+    </script>
+
+</body>
+</html>
